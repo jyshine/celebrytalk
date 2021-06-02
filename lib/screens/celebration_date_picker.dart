@@ -1,4 +1,4 @@
-// @dart=2.8
+// @dart=2.9
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -16,9 +16,7 @@ class BirthDatePicker extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final initDate =
-
-    DateFormat('yyyy-MM-dd').parse('2000-01-01');
+    final initDate = DateFormat('yyyy-MM-dd').parse('2021-06-02');
     return SizedBox(
       height: 300,
       child: CupertinoDatePicker(
