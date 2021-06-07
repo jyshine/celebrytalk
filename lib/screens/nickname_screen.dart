@@ -1,6 +1,8 @@
+import 'package:celebrytalk/screens/celebration_chose_screen.dart';
 import 'package:flutter/material.dart';
 
 class NicknameScreen extends StatefulWidget {
+  static const String id ="nickname_screen";
 
   @override
   _NicknameScreenState createState() => _NicknameScreenState();
@@ -75,7 +77,10 @@ class _NicknameScreenState extends State<NicknameScreen> {
                     bottomRight: Radius.circular(20)
                 ),
               ),
-              child: TextButton(onPressed: (){},
+              child: TextButton(onPressed: (){
+                Navigator.pushNamed(context, CelebrationChoseScreen.id);
+
+              },
                 child: Text("확인"
                   ,style: TextStyle(
                     fontFamily:  'SDSamliphopangcheTTF',

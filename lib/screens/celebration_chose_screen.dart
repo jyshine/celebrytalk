@@ -1,12 +1,14 @@
+import 'package:celebrytalk/screens/celebration_datepicker_screen.dart';
 import 'package:flutter/material.dart';
 
 class CelebrationChoseScreen extends StatefulWidget {
-
+  static const String id ="celebration_chose_screen";
   @override
   _CelebrationChoseScreenState createState() => _CelebrationChoseScreenState();
 }
 
 class _CelebrationChoseScreenState extends State<CelebrationChoseScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,7 +61,9 @@ class _CelebrationChoseScreenState extends State<CelebrationChoseScreen> {
                               bottomRight: Radius.circular(20)
                           ),
                         ),
-                        child: TextButton(onPressed: (){},
+                        child: TextButton(onPressed: (){
+                          Navigator.pushNamed(context, CelebrationDatepickerScreen.id);
+                        },
                           child: Text("생일"
                             ,style: TextStyle(
                               fontFamily:  'SDSamliphopangcheTTF',

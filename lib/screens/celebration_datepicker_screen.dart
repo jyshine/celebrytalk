@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'celebration_date_picker.dart';
 
 class CelebrationDatepickerScreen extends StatefulWidget {
+  static const String id ="celebration_datepicker_screen";
 
   @override
   _CelebrationDatepickerScreenState createState() => _CelebrationDatepickerScreenState();
@@ -27,7 +28,7 @@ class _CelebrationDatepickerScreenState extends State<CelebrationDatepickerScree
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Text(
-                "날짜를 선택해주세요.",
+                "날짜를 입력해주세요.",
                 style: TextStyle(
                   fontFamily:  'SDSamliphopangcheTTF',
                   fontSize: 22.32,
@@ -35,7 +36,7 @@ class _CelebrationDatepickerScreenState extends State<CelebrationDatepickerScree
                   shadows: [
                     Shadow(
                       blurRadius: 20.0,
-                      color: Colors.white,
+                      color: Colors.grey,
                       offset: Offset(5.0, 5.0),
                     ),
                   ],
@@ -43,7 +44,7 @@ class _CelebrationDatepickerScreenState extends State<CelebrationDatepickerScree
               ),
             ),
             Container(
-              height: 40,
+              height: 100,
               width: 300,
               decoration: BoxDecoration(
                 color: Colors.white,
